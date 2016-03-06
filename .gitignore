@@ -1,0 +1,5 @@
+node_modules
+.sass-cache
+EATING-OUT/EatingOutsideApp/platforms/*
+.cordova
+EATING-OUT/EatingOutsideApp/hooks/*

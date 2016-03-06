@@ -1,0 +1,34 @@
+/////////////////////////////////////////////////
+// COLORS
+/////////////////////////////////////////////////
+
+$soft-green: #A4D0C4;
+$dark-green: #72C4B9;
+$soft-yellow: #FEFEE7;
+$greey: #9A9C9F;
+$soft-black: #323232;
+$red-menu: #DF314D;
+$white: #FFFFFF;
+
+/////////////////////////////////////////////////
+// FONTS
+/////////////////////////////////////////////////
+
+@font-face {
+	font-family: 'fox';
+	src: url('../fonts/fox.ttf');
+}
+
+@font-face {
+	font-family: 'smoolthan';
+	src: url('../fonts/smoolthan.ttf');
+}
+
+/////////////////////////////////////////////////
+// COMMON LAYOUT STYLE
+/////////////////////////////////////////////////
+
+html, body {
+  min-height: 100vh;
+//  max-height: 100vh;
+}

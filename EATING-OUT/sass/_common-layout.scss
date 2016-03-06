@@ -1,0 +1,115 @@
+  /////////////////////////////////////////////////////
+  // COMMON STYLE ACROSS ALL THE PAGES
+  //////////////////////////////////////////////////////
+
+  *:focus {
+    outline: none;
+  }
+
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+    background: #fdf0eb;
+  }
+
+  a, p {
+    color: $soft-black!important;
+  }
+
+
+  //////////////////////////////////////////////////////
+  // TOP MENU/LOGO
+  //////////////////////////////////////////////////////
+
+  .logo {
+    min-height: 12vh;
+    background: #5f656f;
+    border:none;
+  }
+
+  //////////////////////////////////////////////////////
+  // BUTTONS STYLE
+  //////////////////////////////////////////////////////
+
+  //-Buttons
+
+  .buttons {
+    margin-top: 10px;    
+    text-align: center;
+    a {
+      width: 64px;
+      height: 64px;
+      display: inline-block;
+      position: relative;
+      line-height: 64px;
+      background-color: #2f3238;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#2f3238), to(#2f3238));
+      background-image: linear-gradient(top, #2f3238, #2f3238);
+      -moz-border-radius: 32px;
+      -webkit-border-radius: 32px;
+      border-radius: 32px;
+      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+      &:active {
+          top: 1px;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#f6f6f6));
+          background-image: linear-gradient(top, #eaeaea, #f6f6f6);
+          &:before {
+            top: -9px;
+          }
+      }
+      &::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: -8px;
+          right: -8px;
+          bottom: -8px;
+          left: -8px;
+          background-color: $red-menu;
+          -moz-border-radius: 140px;
+          -webkit-border-radius: 140px;
+          border-radius: 140px;
+          opacity: 0.5; 
+      }
+    }
+    a:hover::before {
+    	opacity: 1;
+    	text-decoration: none;
+  	}
+  }
+
+  //////////////////////////////////////////////////////
+  // HEADER WITH RESTAURANT LOGO
+  //////////////////////////////////////////////////////
+
+  header.restaurantLogo {
+    height: 15vh;
+    color:white;
+    font-size:3em;
+    text-align:center;
+    padding-top:15px;
+    font-family:fox;
+  }
+
+  //////////////////////////////////////////////////////
+  // FOOTER
+  //////////////////////////////////////////////////////
+
+
+  footer {
+    background: $soft-black;
+    text-align: left;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    color: $soft-yellow;
+      p{
+        margin: 5px 0 0;    
+      }
+    }
+

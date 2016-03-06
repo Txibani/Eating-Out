@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <!-- Latest compiled and minified CSS BOOTSTRAP and main.css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <title>Index Page</title>
+
+    </head>
+    <body class="indexPage">
+        <!--HTML5 and Bootstrap structure-->
+
+        <!--Brand top navbar-->
+        <nav class="navbar navbar-default logo">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="img/logo.png">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!--Title of the app-->
+        <header class="">
+            <div class="container">
+                 <h1>Eating Out</h1>
+            </div>
+        </header>
+
+        <!--Form to select restaurant-->
+        <section class="formSection">
+            <div class="container">
+                <form role="form" id="selectRestForm">
+                    <div class="form-group">
+                        <label for="sel1">Restaurant list (select one):</label>
+                        <select class="form-control" id="selectedOpt">
+                            <option value="Restaurant1">Restaurant 1</option>
+                            <option value="Restaurant2">Restaurant 2</option>
+                            <option value="Restaurant3">Restaurant 3</option>
+                            <option value="Restaurant4">Restaurant 4</option>
+                        </select>
+                    </div>
+                    <!--<button type="submit" class="btn btn-default btn-lg">
+                        Go
+                    </button> -->
+                    <div class="buttons btnSelect">
+                        <a class="goBtn" href="html/mainMenu.html"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></a>
+                    </div> 
+                </form>
+            </div>
+        </section>
+
+        <!--Bootstrap modal-->
+
+        <section class="container">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg btnRegister" data-toggle="modal" data-target="#myModal">
+              Register your restaurant
+            </button>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Register your restaurant with us:</h4>
+              </div>
+              <div class="modal-body">
+                <form role="form" id="newRestaurant" method="post" action="process.php" name="contact">
+                    <label for="first_name">First name<span>*</span></label>
+                        <input type="text" name="first_name" class="form-control input-sm" required>
+                    <label for="last_name">Last name<span>*</span></label>
+                        <input type="text" name="last_name" class="form-control input-sm" required>
+                    <label for="email">Email<span>*</span></label>
+                        <input type="email" name="email" class="form-control input-sm" required>
+                    <label for="restaurant_name">Restaurant name<span>*</span></label>
+                        <input type="text" name="restaurant_name" class="form-control input-sm">
+                    <label for="curl">URL (optional)</label>
+                        <input id="curl" type="url" name="url" class="form-control input-sm">
+                    <label for="address">Address<span>*</span></label>
+                        <input type="text" name="address" class="form-control input-sm">
+                    <label for="zip">Zip/Postal Code<span>*</span></label>
+                        <input type="text" name="zip" class="form-control input-sm">
+                    <label for="city">City<span>*</span></label>
+                        <input type="text" name="city" class="form-control input-sm">
+                    <label for="country">Country<span>*</span></label>
+                        <input type="text" name="country" class="form-control input-sm" placeholder="Country (only Uk valid for now)">
+                    <label for="telephone">Telephone<span>*</span></label>
+                        <input type="text" name="telephone" class="form-control input-sm">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btnRegister" type="submit">Register</button>
+              </div>
+<!-- 
+              <div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Modal powers, activate!</a></p></div> -->
+
+            </div>
+          </div>
+        </div>
+
+        <footer class="container-fluid">
+            <p>@2015</p>
+        </footer>
+
+        <!--Jquery-->
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+        <!--Validate Jquery-->
+        <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <!--index.js-->
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!--Cordova js-->
+        <script type="text/javascript" src="cordova.js"></script>
+
+    </body>
+</html>

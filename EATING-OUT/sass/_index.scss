@@ -1,0 +1,123 @@
+/////////////////////////////////////////////////
+// INDEX PAGE STYLE
+/////////////////////////////////////////////////
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.indexPage {
+
+  header {
+    padding: 2% 0;
+    text-align: center; 
+  }
+
+  .formSection {
+    padding: 4% 0 1%;
+    text-align: center;
+  }
+
+  #selectedOpt {
+    background:transparent;
+    color:white;
+  }
+
+  // - Title/App name
+
+  header h1 {
+      font-size: 4em;
+      font-family: smoolthan;
+      color:$red-menu;
+  }
+  
+  .buttons a.goBtn:hover::before {
+    background-color: $red-menu;
+  }
+
+  .btnSelect {
+    padding: 5% 0 0%;
+  }
+
+  .goBtn span {
+    font-size: 34px;
+    vertical-align: -11px;
+  }
+
+  .glyphicon {
+    color: $red-menu;
+  }
+} /*END INDEXPAGE*/
+
+.well { background: #fff; text-align: center; }
+.modal { text-align: left; }
+
+///////////////////////////////////////////
+//REGISTER FORM STYLE
+///////////////////////////////////////////
+
+  /*New estaurant form registration*/
+
+  form#newRestaurant {
+    .input-sm {
+        margin-bottom: 5px;
+        /*width: 50%;*/
+        font-family: smoolthan;
+      }
+      label {
+        padding-top: 10px;
+        float:left;
+        width:150px;
+        padding-left:20px;
+        font-family: smoolthan;
+        font-weight: bold;
+        span {
+          color:$red-menu;
+        }
+      }
+      .error {
+        width: 100%;
+        color:$red-menu;
+      }
+      .btn-block {
+        width: 30%;
+        margin-top: 20px;
+        float: right;
+        margin-right: 20px;
+      }     
+  }
+
+  .modal-header {
+    border-bottom:solid 1px $red-menu;
+  }
+
+  .modal-title {
+    font-family: smoolthan;
+  }
+
+  .btn-primary {
+    background-color:$red-menu;
+    border-color: $red-menu;
+  }
+
+  .btn:hover {
+    background: $red-menu;
+    opacity: 0.8;
+  }
+
+  .btnRegister {
+    margin: 15% auto;
+    display: block;
+    background: transparent;
+    border-color:$red-menu;
+    color:$red-menu;
+  }
+
+  .btn-primary:focus {
+    background: transparent;
+
+  }
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <!-- Latest compiled and minified CSS BOOTSTRAP and main.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <title>Index Page</title>
+
+</head>
+<body class="menuBody">
+    <!--HTML5 and Bootstrap structure-->
+
+    <!--Brand top navbar-->
+    <nav class="navbar navbar-default logo">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">
+                    <img alt="Brand" src="../img/logo.png">
+                </a>
+                <div class="container">
+                    <div id="sidebar">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="reservations.html">Reservations</a></li>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="camera.html">Camera</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-content">
+                        <div class="swipe-area"></div>
+                        <a href="#" data-toggle="#container" id="sidebar-toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="displayDataMenu">
+        <div class="container">
+            <div class="row">
+                <h1 class="titleInHere"></h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 menuWrap">
+                    <ul>
+                        <li><h2>Starters:</h2></li>
+                        <li><p class="starter1"></p></li>
+                        <li><p class="starter2"></p></li>
+                        <li><p class="starter3"></p></li>
+                        <li><h2>Mains:</h2></li>
+                        <li><p class="main1"></p></li>
+                        <li><p class="main2"></p></li>
+                        <li><p class="main3"></p></li>
+                        <li><h2>Desserts:</h2></li>
+                        <li><p class="dessert1"></p></li>
+                        <li><p class="dessert2"></p></li>
+                        <li><p class="dessert3"></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <footer class="container-fluid">
+        <p>2015</p>
+    </footer> -->
+
+    <!--Jquery-->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!--SwipableMenu.js-->
+    <script src="../js/swipableMenu.js"></script>
+
+    <script src="../js/getData.js"></script>
+
+    <!--Cordova js-->
+    <!--<script type="text/javascript" src="../cordova.js"></script>-->
+
+</body>
+</html>

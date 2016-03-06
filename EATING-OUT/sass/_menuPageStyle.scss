@@ -1,0 +1,25 @@
+.menuBody {
+  height: 100%;
+  text-align: center;
+  .menuWrap {
+    ul {
+      padding: 0;
+    }
+  }
+  h1 {
+    color: $white;
+    font-family: fox;
+    margin-bottom: 0;
+  }
+  h2 {
+    color: $white;
+    font-family: fox;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  p {
+    color: #FFFFFF;
+    font-family: smoolthan;
+  }
+}
